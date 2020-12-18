@@ -5,59 +5,51 @@ body {
 }
 
 .profile {
-	width: 175px;
-	margin-bottom: 50px;
 	border-radius: 50%;
+
 }
 
 #welcome {
+
 	position: absolute;
-	overflow: hidden;
-	height: 800px;
-	color: white;
-	left: 0;
-	top: 0;
+	color: #FFFFFF;
 	bottom: 0;
-	right: 0;
-	opacity: 0.83;
-	background: linear-gradient(#00cc00 0%, #ccff33 100%);
+	background: linear-gradient(#60ebeb 0%, #27ae60 100%);
 	display: table;
 	width: 100%;
 	height: 100%;
 	z-index: 9;
+
 }
 
-.inner {
-	display: table-cell;
-	position: relative;
-	text-align: center;
-	vertical-align: middle;
-}
+
 
 h1 {
+
 	font-size: 40px;
-	line-height: 1.2;
-	font-family: 'Lato', sans-serif;
+	font-family: sans-serif;
 	font-weight: 300;
+
 }
 
 #name {
-	font-size: 30px;
+	font-size: 50px;
 	line-height: 1.2;
-	font-family: cursive
+	font-family: 'Cinzel Decorative', cursive;
+
 }
 
 h2 {
 	font-size: 30px;
 	font-weight: 300;
-	line-height: 1.2;
-	font-family: monospace
+	font-family: monospace;
 }
 
 #bio {
+	font-family: 'Cinzel Decorative', cursive;
+
 	padding: 50px;
 	text-align: center;
-	font-size: 42px;
 }
 
 .line {
@@ -67,47 +59,75 @@ h2 {
 	margin: 8px auto;
 }
 
+
 p {
-	max-width: 450px;
-	margin: 25px auto;
 	font-size: 17px;
-	line-height: 1.3;
 }
 
+.parallax-inner {
+
+	display: table-cell;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.article:hover {
+	color: fuchsia;
+}
+
+
+
+/*ADD CSS FROM HERE */
+
 .menu {
-	list-style: none;
-	font-family: inherit;
 	position: fixed;
-	top: 10px;
-	right: 30px;
+	background: white;
+	width: 100%;
+	margin-top: 0px;
+	top: 0px;
 	z-index: 10;
-	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: aqua;
+	text-shadow: 2px 2px black;
 }
 
 .links {
-	float: left;
-	color: aqua;
-	padding-top: 5px;
-	padding-right: 9px;
-	padding-left: 9px;
-	padding-bottom: 5px;
+	display: inline;
+	padding-left: 33px;
+	padding-right: 25px;
 	font-family: fantasy;
 	font-size: 20px;
 }
 
 .links:hover {
-	background-color: crimson;
-	font-family: 'Langar', cursive;
+	font-size: 30px;
+	text-decoration: underline;
 }
 
-a {
-	text-decoration: none;
+#writings a {
+	text-shadow: none !important;
+	text-decoration: underline !important;
+	color: crimson !important;
 }
 
-.article:hover {
-	color: crimson;
+#contact {
+	background: firebrick;
 }
 
-html {
-	scroll-behavior: smooth;
+.contact_1 a {
+	color: white;
+	text-shadow: none;
+}
+
+.contact_1 h2 {
+	display: inline;
 }
